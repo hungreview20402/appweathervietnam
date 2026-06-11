@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<relativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/weather_widget_background">
+
+    <!-- Top Left: App Title and Little Weather Badge -->
+    <linearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <textView
+            android:id="@+id/widget_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời Tiết Việt"
+            android:textColor="#80FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1" />
+    </linearLayout>
+
+    <!-- Top Right: Refresh Button -->
+    <imageView
+        android:id="@+id/widget_refresh"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:contentDescription="Cập nhật"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+    <!-- Center Left: Active Location -->
+    <textView
+        android:id="@+id/widget_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        android:text="Hà Nội"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Center Right: Temperature -->
+    <textView
+        android:id="@+id/widget_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/header_layout"
+        android:layout_marginTop="2dp"
+        android:text="32°C"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Bottom: Weather Condition & Update Time -->
+    <linearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <textView
+            android:id="@+id/widget_condition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trời quang mây tạnh"
+            android:textColor="#E0FFFFFF"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <textView
+            android:id="@+id/widget_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vừa xong"
+            android:textColor="#80FFFFFF"
+            android:textSize="10sp" />
+    </linearLayout>
+
+</relativeLayout>

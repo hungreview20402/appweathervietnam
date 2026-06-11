@@ -1,0 +1,6 @@
+{
+  "name": "Thời Tiết Việt",
+  "description": "Ứng dụng thời tiết tinh tế cho người Việt, tích hợp mô phỏng Dynamic Island độc đáo, trợ lý AI thông minh và Widget màn hình chính trực quan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
